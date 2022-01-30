@@ -1,0 +1,60 @@
+.categ{
+    font-weight: 300;
+    font-size: smaller;
+    color: white;
+    text-align: center;
+    border-radius: 9999px;
+}
+
+.title{
+    font-weight: 400;
+}
+
+.desc {
+    font-weight: 300;
+    font-size: smaller;
+    color: gray;
+}
+
+.auth{
+    font-size: x-small;
+    font-weight: 500;
+}
+
+.duration{
+    font-size: x-small;
+    font-weight: 400;
+    color: gray;
+}
+
+.butmid {
+    transition: .5s ease;
+    opacity: 1;
+    left: 50%;
+    top: 25%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    color: tomato;
+    z-index: 2;
+  }
+
+  
+  
+.card-img-top{
+    opacity: 1;
+    transition: .5s ease;
+    z-index: 3;
+}
+.card-img-top:hover .butts{
+    background-color :white;
+  }
+.card-img-top:hover{
+    filter: brightness(50%);
+    z-index: 1;
+  }
+
+.butmid:hover{
+    z-index: 4;
+}
+
