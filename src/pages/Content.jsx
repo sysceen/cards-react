@@ -1,5 +1,5 @@
 import "../css/Style.css"
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Data from "../data.json"
 
 const Content = () => { 
@@ -27,7 +27,7 @@ const Content = () => {
             <div className="row justify-content-center align-items-center text-left my-4 m-lg-5 p-lg-5">
 
                 <div className="col-12 col-lg-6 px-3">
-                    <img src={Data[active].image} className="rounded"  style={{width:"100%",height:"100%"}}/>
+                    <img src={Data[active].image} className="rounded" alt="main card"  style={{width:"100%",height:"100%"}}/>
                 </div>
 
                 <div className="col-12 col-lg-6 p-5">
@@ -54,7 +54,7 @@ const Content = () => {
                 Data.map((card) => {
                     return (
                     <div key={Data.indexOf(card)} className="card col-12 col-md-4 border-0" >
-                        <img className="card-img-top rounded" src={card.image} style={{height:'50%'}} alt="Card image cap"/>
+                        <img className="card-img-top rounded" src={card.image} style={{height:'50%'}} alt="Card cap"/>
   
                             <div className="butmid justify-content-center text-center align-items-center">
                                 <button className="butts btn btn-success categ px-4 m-1" onClick={() => setActive(Data.indexOf(card))}>VIEW</button>
